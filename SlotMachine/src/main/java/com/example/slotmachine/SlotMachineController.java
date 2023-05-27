@@ -107,8 +107,8 @@ public class SlotMachineController {
         }
 
 
-            String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss"));
-            String filename = folderName + "/statisztika" + timestamp + ".json";
+            String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH_mm_ss"));
+            String filename = folderName + "/statisztika" + timestamp + "_gno_"+ spinClickCount + ".json";
             File file = new File(filename);
 
 
